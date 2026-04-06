@@ -1,4 +1,4 @@
-[Documentation of finance dashboard.pdf](https://github.com/user-attachments/files/26503193/Documentation.of.finance.dashboard.pdf)
+Click here -->[Documentation of finance dashboard.pdf](https://github.com/user-attachments/files/26503193/Documentation.of.finance.dashboard.pdf)
 # Finance Dashboard
 
 A full-stack finance management web application built with ASP.NET Core 10 Web API and React.js.
