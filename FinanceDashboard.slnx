@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="financedashboard.client/financedashboard.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="FinanceDashboard.Server/FinanceDashboard.Server.csproj" />
+</Solution>

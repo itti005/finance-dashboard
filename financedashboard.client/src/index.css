@@ -1,0 +1,253 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #0f1117;
+    --bg2: #1a1d27;
+    --bg3: #242736;
+    --border: #2e3147;
+    --text: #e8eaf0;
+    --text2: #8b90a7;
+    --primary: #6c63ff;
+    --primary-light: #8b85ff;
+    --income: #22c55e;
+    --expense: #ef4444;
+    --accent: #f59e0b;
+    --radius: 12px;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+input, select, textarea {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+}
+
+.card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+    .btn-primary:hover {
+        background: var(--primary-light);
+    }
+
+.btn-ghost {
+    background: transparent;
+    color: var(--text2);
+    border: 1px solid var(--border);
+}
+
+    .btn-ghost:hover {
+        background: var(--bg3);
+        color: var(--text);
+    }
+
+.btn-danger {
+    background: #ef444420;
+    color: var(--expense);
+    border: 1px solid #ef444440;
+}
+
+    .btn-danger:hover {
+        background: #ef444430;
+    }
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.badge-income {
+    background: #22c55e20;
+    color: var(--income);
+}
+
+.badge-expense {
+    background: #ef444420;
+    color: var(--expense);
+}
+
+.badge-admin {
+    background: #6c63ff20;
+    color: var(--primary-light);
+}
+
+.badge-analyst {
+    background: #f59e0b20;
+    color: var(--accent);
+}
+
+.badge-viewer {
+    background: #8b90a720;
+    color: var(--text2);
+}
+
+.badge-active {
+    background: #22c55e20;
+    color: var(--income);
+}
+
+.badge-inactive {
+    background: #ef444420;
+    color: var(--expense);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-label {
+    font-size: 13px;
+    color: var(--text2);
+    font-weight: 500;
+}
+
+.form-input {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 9px 12px;
+    color: var(--text);
+    font-size: 14px;
+    transition: border-color 0.2s;
+    width: 100%;
+}
+
+    .form-input:focus {
+        outline: none;
+        border-color: var(--primary);
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px 14px;
+    color: var(--text2);
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border);
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+}
+
+    tbody tr:hover {
+        background: var(--bg3);
+    }
+
+tbody td {
+    padding: 12px 14px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--text2);
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    color: var(--text2);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.page-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.page-subtitle {
+    color: var(--text2);
+    font-size: 14px;
+    margin-top: 2px;
+}

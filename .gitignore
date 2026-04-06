@@ -1,0 +1,18 @@
+# .NET
+**/bin/
+**/obj/
+*.user
+*.suo
+.vs/
+
+# Node
+**/node_modules/
+**/dist/
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Environment
+appsettings.Development.json 
